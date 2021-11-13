@@ -1,0 +1,180 @@
+body{
+	margin:0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif,Arial;
+}
+* {box-sizing: border-box}
+
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+.container1:hover .overlay {
+  opacity: 0.7;
+}
+.container2:hover .overlay{
+  opacity:0.7;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container {
+  position: relative;
+}
+.container1 {
+  position: relative;
+}
+.container2{
+  position:relative;
+}
+ 
+
+#bottom-pad{
+  margin-right:100px;
+  padding-top: 32px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+#bottom-pad-1{
+  margin-right:0px;
+  padding-top: 32px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+
+
+#logo-img{
+  width: 250px;
+  height: 83px;
+}
+
+#bottom-pad1{
+  float: left;
+  font-size: 50px;
+  padding-top: 15px;
+  padding-bottom:8px;
+  margin-left:40px;
+
+}
+
+
+
+.category {
+   float:left;
+}
+
+ul.topnav {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  overflow: hidden;
+  background-color: black;
+  
+}
+ul.topnav a {
+  color:white;
+  text-decoration:none;
+
+
+}
+ul.topnav li {float: right;
+}
+
+
+
+ul.topnav li a {
+  display: inline-block;
+  color: white;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+ul.topnav li a:hover {background-color: grey;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:1110px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+
+
+  }
+}
+
+@media screen and (max-width:1110px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    
+  }
+}
+
+
+
+@media (max-width:1330px) {
+ #bottom-pad{
+  font-size: 15px;
+ }
+
+ #logo-img{
+  padding-top: 10px;
+  height: 4em;
+ }
+}
+
+@media (max-width:1185px) {
+ #bottom-pad{
+  font-size: 13px;
+ }
+}
+
+
+@media (max-width: 1110px){
+  #bottom-pad{
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width:320px){
+  #bottom-pad-1 a{
+    font-size: 10px;
+  }
+}
